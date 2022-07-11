@@ -1,0 +1,16 @@
+
+@media screen and (max-width: 600px){ 
+
+    .IconSection{
+        display: none;
+    }
+
+    .btnDark{
+        margin: auto;
+    }
+    footer{
+
+        padding: 20px;
+    }
+ 
+}
