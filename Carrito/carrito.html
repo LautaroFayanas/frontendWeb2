@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="/sidebars.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid ">
+                <a class="navbar-brand text-white" href="/index.html">shipping.com</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item ">
+                            <a class="nav-link active text-white" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="/Carrito/pago.html">Checkout</a>
+                        </li>
+                    </ul>
+                    <ul class="px-5">
+                        <li class="submenu">
+                            <img style="width: 40px;" class="d-flex" src="/Imagenes/carrito-de-compras (1).png"
+                                id="img-carrito">
+                            <div id="carrito">
+                                
+                                <table id="lista-carrito" style="width: 100%;">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <br>
+                                <div class="d-flex w-100 justify-content-around">
+                                    <a href="#" id="" class="btn btn-success ">Finalizar Compra</a>
+                                    <a href="#" id="vaciar-carrito" class="btn btn-danger ">Vaciar Carrito</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="/Imagenes/smartmockups_l5gtdwqc.jpg" class=" d-block mx-lg-auto img-fluid m-5 rounded-5"
+                        alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
+                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+
+
+    <main class="text-center">
+
+
+        <div class="album py-5 bg-light" id="lista-productos">
+            <div class="container ">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
+                    <div class="col">
+                        <div class="card shadow-sm rounded-5">
+                            <img class="rounded-5" src="/Imagenes/smartmockups_l5gtf9f0.jpg" alt="">
+
+                            <div class="card-body">
+                                <p class="tittle card-text h3">Elepanth </p>
+                                <p class="h5 text-success price">$50 </p>
+                                <p class="card-text">This is a wider card with </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group m-auto">
+                                        <button type="button" class="btn btn-sm btn-dark">View</button>
+                                        <button type="button" data-id="1"
+                                            class="btn btn-success agregar-carrito">Agregar
+                                            Carrito</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm rounded-5">
+                            <img class="rounded-5" src="/Imagenes/smartmockups_l5gtetav.jpg" alt="">
+
+                            <div class="card-body">
+                                <p class="tittle card-text h3">Elepanth </p>
+                                <p class="h5 text-success price">$50 </p>
+                                <p class="card-text">This is a wider card with </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group m-auto">
+                                        <button type="button" class="btn btn-sm btn-dark">View</button>
+                                        <button type="button" data-id="2"
+                                            class="btn btn-success agregar-carrito">Agregar
+                                            Carrito</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm rounded-5">
+                            <img class="rounded-5" src="/Imagenes/smartmockups_l5gtekw9.jpg" alt="">
+
+                            <div class="card-body">
+                                <p class="tittle card-text h3">Elepanth </p>
+                                <p class="h5 text-success price">$50 </p>
+                                <p class="card-text">This is a wider card with </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group m-auto">
+                                        <button type="button" class="btn btn-sm btn-dark">View</button>
+                                        <button type="button" data-id="3"
+                                            class="btn btn-success agregar-carrito">Agregar
+                                            Carrito</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm rounded-5">
+                            <img class="rounded-5" src="/Imagenes/smartmockups_l5gteeq3.jpg" alt="">
+
+                            <div class="card-body">
+                                <p class="tittle card-text h3">Elepanth </p>
+                                <p class="h5 text-success price">$50 </p>
+                                <p class="card-text">This is a wider card with </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group m-auto">
+                                        <button type="button" class="btn btn-sm btn-dark">View</button>
+                                        <button type="button" data-id="4"
+                                            class="btn btn-success agregar-carrito">Agregar
+                                            Carrito</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm rounded-5">
+                            <img class="rounded-5" src="/Imagenes/smartmockups_l5gtdwqc.jpg" alt="">
+
+                            <div class="card-body">
+                                <p class="tittle card-text h3">Elepanth </p>
+                                <p class="h5 text-success price">$50 </p>
+                                <p class="card-text">This is a wider card with </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group m-auto">
+                                        <button type="button" class="btn btn-sm btn-dark">View</button>
+                                        <button type="button" data-id="5"
+                                            class="btn btn-success agregar-carrito">Agregar
+                                            Carrito</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm rounded-5">
+                            <img class="rounded-5" src="/Imagenes/smartmockups_l5gte6xx.jpg" alt="">
+
+                            <div class="card-body">
+                                <p class=" tittle card-text h3">Elepanth </p>
+                                <p class="h5 text-success price">$50 </p>
+                                <p class="card-text">This is a wider card with </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group m-auto">
+                                        <button type="button" class="btn btn-sm btn-dark">View</button>
+                                        <button type="button" data-id="6"
+                                            class="btn btn-success agregar-carrito">Agregar
+                                            Carrito</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm rounded-5">
+                            <img class="rounded-5" src="/Imagenes/smartmockups_l5gte6xx.jpg" alt="">
+
+                            <div class="card-body">
+                                <p class="tittle card-text h3">Elepanth </p>
+                                <p class="h5 text-success price">$50 </p>
+                                <p class="card-text">This is a wider card with </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group m-auto">
+                                        <button type="button" class="btn btn-sm btn-dark">View</button>
+                                        <button type="button" data-id="7"
+                                            class="btn btn-success agregar-carrito">Agregar
+                                            Carrito</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm rounded-5">
+                            <img class="rounded-5" src="/Imagenes/smartmockups_l5gte6xx.jpg" alt="">
+
+                            <div class="card-body">
+                                <p class="tittle card-text h3">Elepanth </p>
+                                <p class="h5 text-success price">$50 </p>
+                                <p class="card-text ">This is a wider card with </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group m-auto">
+                                        <button type="button" class="btn btn-sm btn-dark">View</button>
+                                        <button type="button" data-id="8"
+                                            class="btn btn-success agregar-carrito">Agregar
+                                            Carrito</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm rounded-5">
+                            <img class="rounded-5" src="/Imagenes/smartmockups_l5gte6xx.jpg" alt="">
+
+                            <div class="card-body">
+                                <p class="tittle card-text h3">Elepanth </p>
+                                <p class="h5 text-success price">$50 </p>
+                                <p class="card-text descrip">This is a wider card with </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group m-auto">
+                                        <button type="button" class="btn btn-sm btn-dark">View</button>
+                                        <button type="button" data-id="9"
+                                            class="btn btn-success agregar-carrito">Agregar
+                                            Carrito</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-dark text-secondary mx-5 pb-5 rounded-5 text-center ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f3f4f5" fill-opacity="1"
+                    d="M0,224L48,213.3C96,203,192,181,288,170.7C384,160,480,160,576,186.7C672,213,768,267,864,250.7C960,235,1056,149,1152,122.7C1248,96,1344,128,1392,144L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+
+            <div>
+                <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                        world’s
+                        most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
+                        system,
+                        extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button type="button" class="btnDark btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom
+                            button</button>
+                        <button type="button" class="btnDark btn btn-outline-light btn-lg px-4">Secondary</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card-deck mb-3 text-center row m-5 pt-5">
+            <div class="card mb-4 box-shadow col-md-4">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>10 users included</li>
+                        <li>2 GB of storage</li>
+                        <li>Email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow col-md-4 ">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>20 users included</li>
+                        <li>10 GB of storage</li>
+                        <li>Priority email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow col-md-4">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>30 users included</li>
+                        <li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <footer class=" pt-md-5 border-top mt-5 bg-dark text-white  p-3">
+        <div class="row ">
+            <div class="col-12 col-md ">
+                <img class="m-3 rounded-5 text-center " src="/Imagenes/iswanto-arif-cbNVRnlntZ8-unsplash.jpg" alt=""
+                    width="50" height="50">
+                <img class="m-3 rounded-5 text-center " src="/Imagenes/iswanto-arif-cbNVRnlntZ8-unsplash.jpg" alt=""
+                    width="50" height="50">
+                <img class="m-3 rounded-5 text-center   " src="/Imagenes/iswanto-arif-cbNVRnlntZ8-unsplash.jpg" alt=""
+                    width="50" height="50">
+                <small class="mx-5 mb-3 text-center text-white">&copy; 2022-7-10</small>
+
+            </div>
+            <div class="col-6 col-md">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+<script src="/Carrito/Carrito.js"></script>
+
+</html>
